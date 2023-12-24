@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Django Forms
+        </title>
+    </head>
+
+    <body>
+        <h1 style="text-align:center; color:blue;" >Welcome to Django Forms</h1>
+        <hr>
+        <h4 style="text-align:center; color:red;" >Fill up the Form below</h4>
+        <div style="text-align: center;">
+            <form method="POST">
+                {{form.as_p}}
+                {% csrf_token %}
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
